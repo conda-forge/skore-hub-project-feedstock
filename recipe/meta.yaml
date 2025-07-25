@@ -25,6 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - blake3
     - httpx
     - joblib
     - matplotlib-base
