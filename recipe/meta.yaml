@@ -29,6 +29,7 @@ requirements:
     - httpx
     - joblib
     - matplotlib-base
+    - pydantic
     - rich
     - scikit-learn
     - skops
