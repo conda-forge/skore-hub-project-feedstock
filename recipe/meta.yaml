@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skore_hub_project-{{ version }}.tar.gz
-  sha256: 08615e4232a00dbf731a88605f0023a7718d546871e5e877b8822e0490c83382
+  sha256: 617ed2c095e83e51c7c94f34c37617d55eefd15a8eb307fa471f494d62b196c9
 
 build:
   entry_points:
@@ -29,6 +29,7 @@ requirements:
     - httpx
     - joblib
     - matplotlib-base
+    - orjson
     - pydantic
     - rich
     - scikit-learn
