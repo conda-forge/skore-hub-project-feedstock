@@ -30,11 +30,11 @@ requirements:
     - httpx
     - joblib
     - matplotlib-base
+    - numpy
     - orjson
     - pydantic
     - rich
     - scikit-learn
-    - skops
 
 test:
   imports:
