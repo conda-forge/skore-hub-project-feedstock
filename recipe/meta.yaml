@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skore_hub_project-{{ version }}.tar.gz
-  sha256: 617ed2c095e83e51c7c94f34c37617d55eefd15a8eb307fa471f494d62b196c9
+  sha256: 83a9192853d970b84abf1fad80315348a45f68938172a6da538033795b34bbe6
 
 build:
   entry_points:
@@ -17,7 +17,7 @@ build:
     - skore-hub-logout = skore_hub_project.authentication.logout:logout
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
