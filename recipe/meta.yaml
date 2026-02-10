@@ -12,9 +12,8 @@ source:
 
 build:
   entry_points:
-    - skore.plugins.project.hub = skore_hub_project:Project
-    - skore-hub-login = skore_hub_project.authentication.login:login
-    - skore-hub-logout = skore_hub_project.authentication.logout:logout
+    - skore.plugins.login.hub = skore_hub_project.authentication.login:login
+    - skore.plugins.project.hub = skore_hub_project.project.project:Project
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -33,8 +32,9 @@ requirements:
     - numpy
     - orjson
     - pydantic
-    - rich
+    - rich >=14.2.0
     - scikit-learn
+    - scipy
 
 test:
   imports:
