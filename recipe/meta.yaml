@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,13 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skore_hub_project-{{ version }}.tar.gz
-  sha256: 80917ffa3ebf3dfce9ac98355cb66bb47a58dfbb78ecbec803f6d5bb07871676
+  sha256: 9a3c5d70317ec4f8c7c073eb2003d8419cd72d4073d90072592290c05d6acf2b
 
 build:
   entry_points:
-    - skore.plugins.project.hub = skore_hub_project:Project
-    - skore-hub-login = skore_hub_project.authentication.login:login
-    - skore-hub-logout = skore_hub_project.authentication.logout:logout
+    - skore.plugins.login.hub = skore_hub_project.authentication.login:login
+    - skore.plugins.project.hub = skore_hub_project.project.project:Project
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -33,8 +32,9 @@ requirements:
     - numpy
     - orjson
     - pydantic
-    - rich
+    - rich >=14.2.0
     - scikit-learn
+    - scipy
 
 test:
   imports:
