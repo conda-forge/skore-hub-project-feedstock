@@ -32,7 +32,7 @@ requirements:
     - numpy
     - orjson
     - pydantic
-    - rich >=14.2.0
+    - rich[jupyter] >=14.2
     - scikit-learn
     - scipy
 
@@ -60,7 +60,6 @@ extra:
   recipe-maintainers:
     - auguste-probabl
     - glemaitre
-    - mariesacksick
     - rouk1
     - thomass-dev
     - tuscland
