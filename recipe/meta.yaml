@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.16" %}
+{% set version = "0.0.17" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skore_hub_project-{{ version }}.tar.gz
-  sha256: 9a3c5d70317ec4f8c7c073eb2003d8419cd72d4073d90072592290c05d6acf2b
+  sha256: 7f3e15d8a8f4f995596b14578c110ce1ef6fe7254fa89aaf7d4ca62d11c871f5
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - numpy
     - orjson
     - pydantic
-    - rich >=14.2.0
+    - rich[jupyter] >=14.2
     - scikit-learn
     - scipy
 
@@ -60,7 +60,6 @@ extra:
   recipe-maintainers:
     - auguste-probabl
     - glemaitre
-    - mariesacksick
     - rouk1
     - thomass-dev
     - tuscland
