@@ -153,7 +153,6 @@ Feedstock Maintainers
 
 * [@auguste-probabl](https://github.com/auguste-probabl/)
 * [@glemaitre](https://github.com/glemaitre/)
-* [@mariesacksick](https://github.com/mariesacksick/)
 * [@rouk1](https://github.com/rouk1/)
 * [@thomass-dev](https://github.com/thomass-dev/)
 * [@tuscland](https://github.com/tuscland/)
