@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skore_hub_project-{{ version }}.tar.gz
-  sha256: 88fb7cf43a57d2e5c7dd2d8379e88285bb4166a87e82fad1bba31924ae6cf899
+  sha256: f84c0f8e92a061ea2e5937050cf52002782748929aba47b064df56c95c913367
 
 build:
   entry_points:
