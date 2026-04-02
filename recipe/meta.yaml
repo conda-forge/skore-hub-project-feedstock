@@ -1,5 +1,5 @@
 {% set name = "skore-hub-project" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
 {% set python_min = "3.10" %}
 
 package:
